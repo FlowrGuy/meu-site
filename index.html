@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NATAN — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&family=Barlow+Condensed:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ─── NAV (hidden while hero is visible, shown after) ─── -->
+<nav id="mainNav" style="opacity:0; pointer-events:none; transition: opacity 0.4s;">
+  <a href="#" class="nav-logo">NATAN</a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Work</a></li>
+    <li><a href="#contato">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="hero">
+  <div class="hero-nav-bar">
+    <a href="#" class="hero-nav-name">NATAN</a>
+    <ul class="hero-nav-links">
+      <li><a href="#sobre">Work</a></li>
+      <li><a href="#contato">Contact</a></li>
+    </ul>
+  </div>
+  <div class="hero-big-text">PORTFOLIO</div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section class="about" id="sobre">
+  <div class="about-left reveal">
+    <div class="section-tag">ABOUT <span>ME</span></div>
+    <p class="about-bio">
+      Hi, I'm <strong>Natan!</strong><br><br>
+      I am a <strong>Marketing student at USP</strong> (University of São Paulo) and a true arts enthusiast. I believe that marketing truly comes to life when we bridge the gap between strategic rigor and creative sensibility.<br><br>
+      Backed by a <strong>CEA certification (Anbima)</strong> and <strong>Cambridge English</strong> proficiency, my career path is driven by continuous evolution and intellectual curiosity.<br><br>
+      To me, advertising is the ultimate meeting point between aesthetics and results. I strive to translate this passion into exceptional client experiences, blending a sharp artistic eye with flawless technical execution.
+    </p>
+  </div>
+  <div class="about-right reveal" style="transition-delay:0.15s">
+    <div class="skills-block">
+      <div class="skills-title">Softwares</div>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <div class="skill-icon ps">Ps</div>
+          <span class="skill-level">Photoshop — advanced</span>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-icon id">Id</div>
+          <span class="skill-level">InDesign — intermediate</span>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:68%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-icon fi">Fi</div>
+          <span class="skill-level">Figma — intermediate</span>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:65%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-icon pr">Pr</div>
+          <span class="skill-level">Premiere — advanced</span>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="edu-cert-grid">
+      <div class="edu-block">
+        <div class="edu-title">Education</div>
+        <div class="edu-item">
+          <strong>Marketing</strong><br>
+          Etec Martin Luther King<br>
+          <span style="color:#aaa">2020–2022</span>
+        </div>
+        <div class="edu-item" style="margin-top:0.8rem">
+          <strong>Marketing</strong><br>
+          USP<br>
+          <span style="color:#aaa">2025–now</span>
+        </div>
+      </div>
+      <div class="edu-block">
+        <div class="edu-title">Certification</div>
+        <div class="edu-item"><strong>Cambridge</strong><br>B2 English</div>
+        <div class="edu-item" style="margin-top:0.8rem"><strong>ANBIMA</strong><br>CEA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FORBES CAROUSEL ─── -->
+<section class="forbes-section" id="forbes">
+  <div class="forbes-header reveal">
+    <div class="forbes-header-left">
+      <div class="forbes-label">Comercial · Destaque</div>
+      <div class="forbes-title">FORBES<br>BRASIL</div>
+      <p class="forbes-desc">Commercial presentations made to translate ideas into reality. Made for the commercial team of Forbes for big clients.</p>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevBtn" aria-label="Anterior">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="carousel-btn" id="nextBtn" aria-label="Próximo">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2">
+          <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="carousel-outer">
+    <div class="carousel-track" id="carouselTrack">
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder">CHROs DO BRASIL · GUPY</div>
+          <!-- <img src="images/forbes-chros.jpg" alt="Forbes CHROs do Brasil"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Melhores CHROs do Brasil</div>
+        <div class="carousel-card-sub">Comercial design for Forbes List Best CHROs</div>
+        <span class="carousel-card-tag">Forbes × Gupy</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#1a0a2e,#0d1b2a)">DENZA · TECHNOLOGY DRIVES ELEGANCE</div>
+          <!-- <img src="images/forbes-denza.jpg" alt="Forbes Denza"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Technology Drives Elegance</div>
+        <div class="carousel-card-sub">Tailor made project for Denza (BYD)</div>
+        <span class="carousel-card-tag">Forbes × Denza</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#001A3A,#002D6A)">PORTO SEGURO · EVENTO</div>
+          <!-- <img src="images/forbes-porto.jpg" alt="Porto Seguro Evento"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Evento Porto Seguro</div>
+        <div class="carousel-card-sub">Tailor made event at Teatro Porto</div>
+        <span class="carousel-card-tag">Forbes × Porto Seguro</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#0d0d0d,#1a1a1a)">UNDER 30 · OAKLEY</div>
+          <!-- <img src="images/forbes-under30.jpg" alt="Under 30 Oakley"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Under30 Styling da Lista</div>
+        <div class="carousel-card-sub">Fashion Partner Official — Under 30</div>
+        <span class="carousel-card-tag">Forbes × Oakley</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#3A0050,#6B1080)">MULHERES PODEROSAS · TANQUERAY</div>
+          <!-- <img src="images/forbes-mulheres.jpg" alt="Mulheres Poderosas"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Mulheres Poderosas do Brasil</div>
+        <div class="carousel-card-sub">Forbes List Most Powerful Women</div>
+        <span class="carousel-card-tag">Forbes × Tanqueray</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#0A1628,#1C2E50)">GWM · FLAP ADVERTISING</div>
+          <!-- <img src="images/forbes-gwm.jpg" alt="GWM Forbes"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Anúncio de Capa Flap</div>
+        <div class="carousel-card-sub">Special format flap advertising</div>
+        <span class="carousel-card-tag">Forbes × GWM</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#B00020,#E8001A)">CARMED · COCA-COLA</div>
+          <!-- <img src="images/forbes-carmed.jpg" alt="Carmed Coca-Cola"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Launch Coverage</div>
+        <div class="carousel-card-sub">Carmed & Coca-Cola campaign</div>
+        <span class="carousel-card-tag">Forbes × Carmed</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#0d0d1a,#1a1a2e)">TOP CREATORS · PICPAY</div>
+          <!-- <img src="images/forbes-topcreators.jpg" alt="Top Creators"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">Forbes Top Creators</div>
+        <div class="carousel-card-sub">List sponsorship design</div>
+        <span class="carousel-card-tag">Forbes × Picpay</span>
+      </div>
+
+      <div class="carousel-card">
+        <div class="carousel-img">
+          <div class="carousel-img-placeholder" style="background: linear-gradient(135deg,#1a0505,#3A0A0A)">FORBES RADIO · RANGE ROVER</div>
+          <!-- <img src="images/forbes-radio.jpg" alt="Forbes Radio Range Rover"> -->
+          <div class="carousel-img-overlay"><span>Ver projeto →</span></div>
+        </div>
+        <div class="carousel-card-title">CEO Insights — Forbes Rádio</div>
+        <div class="carousel-card-sub">Editorial podcast program design</div>
+        <span class="carousel-card-tag">Forbes × Range Rover</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="carousel-progress" id="carouselProgress"></div>
+</section>
+
+<!-- ─── SOCIAL MEDIA ─── -->
+<section class="social-section" id="social">
+  <div class="projects-label reveal">
+    <span>SOCIAL</span>
+    <span>MEDIA</span>
+  </div>
+
+  <!-- LONAN FERRAMENTAS -->
+  <div class="social-client reveal">
+    <div class="client-header">
+      <span class="client-name">LONAN FERRAMENTAS</span>
+      <span class="client-meta"><strong>2024</strong> · modern design · automotive machines and tools</span>
+    </div>
+    <div class="social-grid">
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#1a3d1a; color:rgba(255,255,255,0.2)">CHAVE DE IMPACTO</div>
+        <!-- <img src="images/lonan-01.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#f5b800; color:rgba(0,0,0,0.2)">SMOKE INJECTOR</div>
+        <!-- <img src="images/lonan-02.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#c0392b; color:rgba(255,255,255,0.2)">MÁQUINA DE LIMPEZA</div>
+        <!-- <img src="images/lonan-03.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#1a3d1a; color:rgba(255,255,255,0.2)">MAHOVI</div>
+        <!-- <img src="images/lonan-04.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#1a8a1a; color:rgba(0,0,0,0.2)">DESMONTADORA</div>
+        <!-- <img src="images/lonan-05.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#c0392b; color:rgba(255,255,255,0.2)">PARAFUSADEIRA</div>
+        <!-- <img src="images/lonan-06.jpg" alt=""> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ÊXODO BURGER -->
+  <div class="social-client reveal" style="margin-top: 3rem;">
+    <div class="client-header">
+      <span class="client-name">ÊXODO BURGER</span>
+      <span class="client-meta"><strong>2023</strong> · gourmet, hot design · burger delivery service</span>
+    </div>
+    <div class="social-grid">
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#1a0a00; color:rgba(255,255,255,0.2)">FIM DE SEMANA COM ÊXODO</div>
+        <!-- <img src="images/exodo-01.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#2d0d00; color:rgba(255,200,100,0.3)">VOCÊ SABIA? · IFOOD</div>
+        <!-- <img src="images/exodo-02.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#c97e00; color:rgba(0,0,0,0.3)">COMECE A SEMANA</div>
+        <!-- <img src="images/exodo-03.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#1a0a00; color:rgba(255,255,255,0.2)">PEÇA JÁ O SEU</div>
+        <!-- <img src="images/exodo-04.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#2d0d00; color:rgba(255,200,100,0.3)">DIA MUNDIAL DO HAMBÚRGUER</div>
+        <!-- <img src="images/exodo-05.jpg" alt=""> -->
+      </div>
+      <div class="social-item">
+        <div class="social-placeholder" style="background:#c97e00; color:rgba(0,0,0,0.3)">BATATA FRITA</div>
+        <!-- <img src="images/exodo-06.jpg" alt=""> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ART WORKS ─── -->
+<section class="art-section" id="art">
+  <div class="art-header reveal">
+    <div>
+      <div class="art-header-title">ART</div>
+      <div class="art-header-sub">No subtitles, just to look</div>
+    </div>
+    <div class="art-header-right">WORKS</div>
+  </div>
+
+  <div class="art-masonry reveal">
+    <div class="art-item">
+      <div style="background:#111; aspect-ratio:1; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">PURITY · been a rebel since the day I born</div>
+      <!-- <img src="images/art-purity.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#2a1a1a; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">FAST AND FURIOS</div>
+      <!-- <img src="images/art-fast.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#0a0a1a; aspect-ratio:3/4; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">BRIAN O'CONNER</div>
+      <!-- <img src="images/art-brian.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#2a0a2a; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">KAGIC · LISTENING PARTY</div>
+      <!-- <img src="images/art-kagic.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#1a1a0a; aspect-ratio:1; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">KAGIC · "MIGUEL"</div>
+      <!-- <img src="images/art-miguel.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#1a0a1a; aspect-ratio:1; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">A$AP ROCKY</div>
+      <!-- <img src="images/art-asap.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#1a0505; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">LIL WAYNE · RED SOX</div>
+      <!-- <img src="images/art-lilwayne.jpg" alt=""> -->
+    </div>
+    <div class="art-item">
+      <div style="background:#0a0a0a; aspect-ratio:1; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:0.9rem;">GS9</div>
+      <!-- <img src="images/art-gs9.jpg" alt=""> -->
+    </div>
+  </div>
+</section>
+
+<!-- ─── EDITORIAL / SENNA ─── -->
+<section class="editorial-section" id="editorial">
+  <div class="reveal">
+    <p style="font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.25em; text-transform:uppercase; color:var(--purple); margin-bottom:0.5rem;">Projeto Editorial</p>
+    <h2 style="font-family:'Bebas Neue',sans-serif; font-size:clamp(2.5rem,5vw,5rem); letter-spacing:0.06em; color:var(--black); line-height:1;">AYRTON SENNA<br><span style="font-size:0.5em; letter-spacing:0.15em; color:var(--gray);">THE CHAMPION'S EYES</span></h2>
+  </div>
+  <div class="editorial-grid reveal" style="transition-delay:0.1s">
+    <div class="editorial-item tall">
+      <div style="background:#8B0000; height:100%; min-height:300px; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em; font-size:1rem;">AYRTON SENNA · CAPA</div>
+      <!-- <img src="images/senna-capa.jpg" alt="Ayrton Senna"> -->
+    </div>
+    <div class="editorial-item">
+      <div style="background:#f5f0e8; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(0,0,0,0.15); letter-spacing:0.1em;">INFÂNCIA MOVIDA<br>PELA VELOCIDADE</div>
+      <!-- <img src="images/senna-infancia.jpg" alt=""> -->
+    </div>
+    <div class="editorial-item">
+      <div style="background:#111; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em;">NACIONAL · CAPACETE</div>
+      <!-- <img src="images/senna-capacete.jpg" alt=""> -->
+    </div>
+    <div class="editorial-item wide">
+      <div style="background:#f5f0e8; aspect-ratio:16/6; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(0,0,0,0.15); letter-spacing:0.1em;">DA EUROPA PARA O SONHO DA FÓRMULA 1</div>
+      <!-- <img src="images/senna-europa.jpg" alt=""> -->
+    </div>
+    <div class="editorial-item">
+      <div style="background:#1a0a0a; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(255,255,255,0.15); letter-spacing:0.1em;">RIVALIDADE QUE<br>VIROU LENDA</div>
+      <!-- <img src="images/senna-rival.jpg" alt=""> -->
+    </div>
+    <div class="editorial-item">
+      <div style="background:#f5f0e8; aspect-ratio:4/3; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; color:rgba(0,0,0,0.15); letter-spacing:0.1em;">O SILÊNCIO EM IMOLA</div>
+      <!-- <img src="images/senna-imola.jpg" alt=""> -->
+    </div>
+    <div class="editorial-item" style="grid-column: span 3;">
+      <div style="background:#1a4a00; aspect-ratio:21/6; display:flex;align-items:center;justify-content:center; font-family:'Bebas Neue',sans-serif; font-size:0.9rem; color:rgba(255,255,255,0.15); letter-spacing:0.15em;">"O HERÓI DE UM POVO BRASILEIRO SÃO AS MINHAS RAÍZES DE ORGULHO"</div>
+      <!-- <img src="images/senna-quote.jpg" alt=""> -->
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="contact" id="contato">
+  <div class="contact-inner">
+    <div class="contact-title">CONTACT<br>ME</div>
+    <div class="contact-links">
+      <a href="https://linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank" class="contact-link">Instagram</a>
+      <a href="https://behance.net" target="_blank" class="contact-link">Behance</a>
+      <a href="mailto:natan.silva3939@gmail.com" class="contact-email">natan.silva3939@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <span class="footer-copy">© 2025 Natan Silva. All rights reserved.</span>
+  <span class="footer-brand">NATAN</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
