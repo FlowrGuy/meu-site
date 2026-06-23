@@ -76,32 +76,51 @@ nav {
 /* ─── HERO ─── */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(160deg, #5A1A9B 0%, #7B2FBE 40%, #9B4FDE 70%, #6020A0 100%);
+  background: linear-gradient(175deg, #3B0D7A 0%, #6A1FB5 35%, #8B3FD0 60%, #5010A0 100%);
   position: relative;
   overflow: hidden;
   display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 0 0 3rem;
+  padding: 0;
 }
+/* bokeh de fundo */
 .hero::before {
   content: '';
   position: absolute; inset: 0;
+  background:
+    radial-gradient(circle 260px at 12% 38%, rgba(190,110,255,0.55) 0%, transparent 70%),
+    radial-gradient(circle 200px at 48% 18%, rgba(150,60,230,0.45) 0%, transparent 65%),
+    radial-gradient(circle 310px at 78% 50%, rgba(90,15,170,0.42) 0%, transparent 70%),
+    radial-gradient(circle 220px at 32% 70%, rgba(210,130,255,0.35) 0%, transparent 65%),
+    radial-gradient(circle 170px at 88% 22%, rgba(170,80,250,0.4) 0%, transparent 65%),
+    radial-gradient(circle 140px at 62% 60%, rgba(130,40,210,0.3) 0%, transparent 60%),
+    radial-gradient(circle 180px at 25% 15%, rgba(200,100,255,0.3) 0%, transparent 65%);
+  filter: blur(38px);
+  pointer-events: none;
+}
+/* ruído sutil */
+.hero::after {
+  content: '';
+  position: absolute; inset: 0;
   background: url("data:image/svg+xml,%3Csvg width='600' height='600' viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='600' height='600' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
-  opacity: 0.4;
+  opacity: 0.25; pointer-events: none;
 }
 .hero-big-text {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(5rem, 15vw, 14rem);
-  letter-spacing: -0.02em;
-  line-height: 0.9;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(7rem, 19.5vw, 19rem);
+  letter-spacing: -0.04em;
+  line-height: 1;
   color: var(--white);
-  padding: 0 2.5rem;
+  padding: 0 2rem;
   position: relative;
   z-index: 2;
+  margin-bottom: -0.12em;
 }
 .hero-nav-bar {
   display: flex; align-items: center; justify-content: space-between;
   padding: 1.4rem 3rem;
   position: absolute; top: 0; left: 0; right: 0; z-index: 10;
+  pointer-events: auto;
 }
 .hero-nav-name {
   font-family: 'Bebas Neue', sans-serif;

@@ -142,6 +142,42 @@ revealEls.forEach(el => revealObs.observe(el));
 
 // ─── LIGHTBOX ───
 const projectData = {
+  copa: {
+    title: 'Forbes cobertura Copa do mundo',
+    tag: 'Forbes × Johnnie Walker',
+    bg: 'linear-gradient(135deg,#0d1f0d,#1a3d1a)',
+    slides: [
+      { src: 'images/forbes/copa/01.jpg', label: 'Cobertura · Copa do Mundo' },
+      { src: 'images/forbes/copa/02.jpg', label: 'Parceria Johnnie Walker' },
+      { src: 'images/forbes/copa/03.jpg', label: 'Spread Editorial' },
+      { src: 'images/forbes/copa/04.jpg', label: 'Destaque de Campanha' },
+      { src: 'images/forbes/copa/05.jpg', label: 'Ativação de Marca' },
+    ]
+  },
+  revo: {
+    title: 'Forbes Time is Money',
+    tag: 'Forbes × Revo',
+    bg: 'linear-gradient(135deg,#1a1200,#3d2c00)',
+    slides: [
+      { src: 'images/forbes/revo/01.jpg', label: 'Time is Money · Abertura' },
+      { src: 'images/forbes/revo/02.jpg', label: 'Conceito de Campanha' },
+      { src: 'images/forbes/revo/03.jpg', label: 'Spread Editorial' },
+      { src: 'images/forbes/revo/04.jpg', label: 'Destaque de Produto' },
+      { src: 'images/forbes/revo/05.jpg', label: 'Encerramento Institucional' },
+    ]
+  },
+  cadillac: {
+    title: 'Forbes 50 Iconic Stories',
+    tag: 'Forbes × Cadillac',
+    bg: 'linear-gradient(135deg,#0a0a1a,#1a1a3a)',
+    slides: [
+      { src: 'images/forbes/cadillac/01.jpg', label: '50 Iconic Stories · Capa' },
+      { src: 'images/forbes/cadillac/02.jpg', label: 'Parceria Cadillac' },
+      { src: 'images/forbes/cadillac/03.jpg', label: 'Spread de Edição' },
+      { src: 'images/forbes/cadillac/04.jpg', label: 'Forbes Rádio · Arte' },
+      { src: 'images/forbes/cadillac/05.jpg', label: 'Campanha Integrada' },
+    ]
+  },
   chros: {
     title: 'Melhores CHROs do Brasil',
     tag: 'Forbes × Gupy',
@@ -200,18 +236,6 @@ const projectData = {
       { src: 'images/forbes/mulheres/03.jpg', label: 'Perfis Editoriais' },
       { src: 'images/forbes/mulheres/04.jpg', label: 'Spreads de Destaque' },
       { src: 'images/forbes/mulheres/05.jpg', label: 'Ativação de Evento' },
-    ]
-  },
-  gwm: {
-    title: 'Anúncio de Capa Flap',
-    tag: 'Forbes × GWM',
-    bg: 'linear-gradient(135deg,#0A1628,#1C2E50)',
-    slides: [
-      { src: 'images/forbes/gwm/01.jpg', label: 'Flap Capa — Aberto' },
-      { src: 'images/forbes/gwm/02.jpg', label: 'Flap Capa — Fechado' },
-      { src: 'images/forbes/gwm/03.jpg', label: 'Layout Interior' },
-      { src: 'images/forbes/gwm/04.jpg', label: 'Destaque de Produto' },
-      { src: 'images/forbes/gwm/05.jpg', label: 'Especificações Técnicas' },
     ]
   },
   carmed: {
