@@ -107,11 +107,13 @@ nav {
 .hero-big-text {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 900;
-  font-size: clamp(7rem, 19.5vw, 19rem);
+  font-size: 15.8vw;
   letter-spacing: -0.04em;
   line-height: 1;
   color: var(--white);
-  padding: 0 2rem;
+  white-space: nowrap;
+  width: 100%;
+  padding: 0 2vw;
   position: relative;
   z-index: 2;
   margin-bottom: -0.12em;
