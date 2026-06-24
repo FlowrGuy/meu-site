@@ -152,6 +152,9 @@ const projectData = {
       { src: 'images/forbes/copa/03.jpg', label: 'Spread Editorial' },
       { src: 'images/forbes/copa/04.jpg', label: 'Destaque de Campanha' },
       { src: 'images/forbes/copa/05.jpg', label: 'Ativação de Marca' },
+      { src: 'images/forbes/copa/06.jpg', label: 'Registro de Evento' },
+      { src: 'images/forbes/copa/07.jpg', label: 'Bastidores da Cobertura' },
+      { src: 'images/forbes/copa/08.jpg', label: 'Encerramento Editorial' },
     ]
   },
   revo: {
@@ -164,6 +167,9 @@ const projectData = {
       { src: 'images/forbes/revo/03.jpg', label: 'Spread Editorial' },
       { src: 'images/forbes/revo/04.jpg', label: 'Destaque de Produto' },
       { src: 'images/forbes/revo/05.jpg', label: 'Encerramento Institucional' },
+      { src: 'images/forbes/revo/06.jpg', label: 'Campanha Digital' },
+      { src: 'images/forbes/revo/07.jpg', label: 'Ativação de Marca' },
+      { src: 'images/forbes/revo/08.jpg', label: 'Registro Final' },
     ]
   },
   cadillac: {
@@ -176,6 +182,9 @@ const projectData = {
       { src: 'images/forbes/cadillac/03.jpg', label: 'Spread de Edição' },
       { src: 'images/forbes/cadillac/04.jpg', label: 'Forbes Rádio · Arte' },
       { src: 'images/forbes/cadillac/05.jpg', label: 'Campanha Integrada' },
+      { src: 'images/forbes/cadillac/06.jpg', label: 'Destaque de Histórias' },
+      { src: 'images/forbes/cadillac/07.jpg', label: 'Layout Interior' },
+      { src: 'images/forbes/cadillac/08.jpg', label: 'Encerramento Editorial' },
     ]
   },
   chros: {
