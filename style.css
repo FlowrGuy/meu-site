@@ -562,33 +562,130 @@ footer {
 }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ─── RESPONSIVE ─── */
+/* ─── RESPONSIVE · 768px ─── */
 @media (max-width: 768px) {
-  nav { padding: 1rem 1.5rem; }
-  .nav-links { gap: 1.5rem; }
-  .about { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
-  .section-heading { padding: 3rem 1.5rem 1.5rem; }
-  .forbes-header { flex-direction: column; gap: 1.5rem; padding: 3rem 1.5rem 1.5rem; }
-  .carousel-outer { padding: 0 1.5rem; }
-  .carousel-progress { padding: 1rem 1.5rem 0; }
-  .carousel-card { flex: 0 0 85%; }
-  .projects-label { padding: 2rem 1.5rem 1.5rem; font-size: 3rem; }
-  .social-client { padding: 0 1.5rem 2rem; }
-  .social-grid { grid-template-columns: repeat(3, 1fr); }
-  .art-masonry { padding: 0 1.5rem; }
-  .editorial-section-header { padding: 2rem 1.5rem 1.5rem; font-size: 3rem; }
-  .editorial-project { padding: 0 1.5rem; margin-bottom: 3rem; }
-  .editorial-grid--3col { grid-template-columns: repeat(2, 1fr); }
-  .editorial-grid--2col { grid-template-columns: 1fr; }
-  .contact { padding: 4rem 1.5rem; }
-  .contact-inner { flex-direction: column; align-items: flex-start; gap: 2rem; }
-  .contact-links { align-items: flex-start; }
-  footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; }
   * { cursor: auto !important; }
   .cursor { display: none; }
+
+  /* nav */
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1.5rem; }
+
+  /* hero */
+  .hero-nav-bar { padding: 1rem 1.5rem; }
+  .hero-big-text { font-size: 15.8vw; margin-bottom: -0.08em; }
+
+  /* about */
+  .about { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
+  .skill-level { width: auto; flex: 1; min-width: 0; }
+  .skill-bar-wrap { flex: 1.5; }
+  .edu-cert-grid { grid-template-columns: 1fr 1fr; }
+
+  /* forbes */
+  .forbes-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; padding: 2.5rem 1.5rem 1.5rem; }
+  .carousel-controls { align-self: flex-end; }
+  .carousel-outer { padding: 0 1.5rem; }
+  .carousel-progress { padding: 1rem 1.5rem 0; }
+  .carousel-card { flex: 0 0 82%; }
+
+  /* social media */
+  .projects-label { padding: 2rem 1.5rem 1.5rem; font-size: clamp(2.2rem, 8vw, 3rem); }
+  .social-client { padding: 0 1.5rem 2.5rem; }
+  .client-header { flex-direction: column; gap: 0.4rem; }
+  .social-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+
+  /* art works */
+  .art-header { padding: 2rem 1.5rem 1.5rem; }
+  .art-masonry { padding: 0 1.5rem; columns: 1; }
+
+  /* editorial */
+  .editorial-section-header { padding: 1.2rem 1.5rem 1rem; font-size: clamp(2.2rem, 8vw, 3rem); }
+  .editorial-project { padding: 0 1.5rem; margin-bottom: 3rem; }
+  .editorial-project-header { margin-bottom: 1.2rem; }
+  .editorial-grid--3col { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .editorial-grid--2col { grid-template-columns: 1fr; gap: 0.75rem; }
+
+  /* contact */
+  .contact { padding: 4rem 1.5rem; }
+  .contact-inner { flex-direction: column; align-items: flex-start; gap: 2rem; }
+  .contact-title { font-size: clamp(3rem, 14vw, 6rem); }
+  .contact-links { align-items: flex-start; }
+
+  /* footer */
+  footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; }
+
+  /* lightbox — feed mode */
   .lightbox-panel { width: 95vw; height: 92vh; }
-  .lightbox-dots { left: 0.5rem; }
-  .lightbox-nav { right: 0.5rem; }
+  .lightbox-viewport {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  .lightbox-track {
+    flex-direction: column;
+    height: auto !important;
+    transform: none !important;
+    transition: none !important;
+    gap: 2px;
+  }
+  .lightbox-slide {
+    flex: 0 0 auto;
+    height: auto;
+  }
+  .lightbox-slide img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+  .lightbox-nav { display: none; }
+  .lightbox-dots { display: none; }
+}
+
+/* ─── RESPONSIVE · 480px ─── */
+@media (max-width: 480px) {
+  /* hero */
+  .hero-nav-links { gap: 1.2rem; }
+  .hero-nav-name { font-size: 1.3rem; }
+
+  /* about */
+  .about { padding: 2.5rem 1.2rem; }
+  .section-tag { font-size: 2.8rem; }
+  .edu-cert-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+
+  /* forbes */
+  .forbes-header { padding: 2rem 1.2rem 1.2rem; }
+  .carousel-outer { padding: 0 1.2rem; }
+  .carousel-card { flex: 0 0 90%; }
+  .carousel-card-title { font-size: 0.9rem; }
+
+  /* social */
+  .projects-label { padding: 1.5rem 1.2rem 1.2rem; }
+  .social-client { padding: 0 1.2rem 2rem; }
+  .social-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+
+  /* art */
+  .art-header { padding: 1.5rem 1.2rem 1.2rem; }
+  .art-masonry { padding: 0 1.2rem; }
+
+  /* editorial */
+  .editorial-section-header { padding: 0.8rem 1.2rem 0.8rem; }
+  .editorial-project { padding: 0 1.2rem; }
+  .editorial-grid--3col { grid-template-columns: 1fr; }
+  .editorial-grid--2col { grid-template-columns: 1fr; }
+
+  /* contact */
+  .contact { padding: 3rem 1.2rem; }
+
+  /* footer */
+  footer { padding: 1.2rem; }
+
+  /* lightbox */
+  .lightbox-panel { width: 98vw; height: 95vh; }
+  .lightbox-header { padding: 0.8rem 1rem; }
+  .lightbox-title { font-size: 1.1rem; }
+  .lightbox-footer { display: none; }
 }
 
 /* ─── PAGE WRAP BLUR ─── */
