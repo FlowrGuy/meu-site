@@ -573,7 +573,7 @@ footer {
 
   /* hero */
   .hero-nav-bar { padding: 1rem 1.5rem; }
-  .hero-big-text { font-size: 15.8vw; margin-bottom: -0.08em; }
+  .hero-big-text { font-size: 15.8vw; margin-bottom: -0.12em; text-align: center; }
 
   /* about */
   .about { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
@@ -596,7 +596,7 @@ footer {
 
   /* art works */
   .art-header { padding: 2rem 1.5rem 1.5rem; }
-  .art-masonry { padding: 0 1.5rem; columns: 1; }
+  .art-masonry { padding: 0 1.5rem; }
 
   /* editorial */
   .editorial-section-header { padding: 1.2rem 1.5rem 1rem; font-size: clamp(2.2rem, 8vw, 3rem); }
