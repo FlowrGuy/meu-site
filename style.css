@@ -79,7 +79,7 @@ nav {
   background: linear-gradient(175deg, #3B0D7A 0%, #6A1FB5 35%, #8B3FD0 60%, #5010A0 100%);
   position: relative;
   overflow: hidden;
-  display: flex; flex-direction: column; justify-content: flex-end;
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
   padding: 0;
 }
 /* bokeh de fundo */
@@ -146,7 +146,7 @@ nav {
   gap: 4rem;
   border-bottom: 1px solid var(--gray-light);
 }
-.about-left {}
+
 .section-tag {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5rem;
@@ -169,7 +169,7 @@ nav {
 .about-right {
   display: flex; flex-direction: column; gap: 2rem;
 }
-.skills-block {}
+
 .skills-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700; font-size: 0.7rem;
@@ -194,12 +194,14 @@ nav {
 .skill-level {
   font-size: 0.85rem; font-weight: 400; color: #555;
   text-transform: capitalize;
+  width: 12rem;
+  flex-shrink: 0;
 }
 .skill-bar-wrap { flex: 1; height: 3px; background: var(--gray-light); border-radius: 2px; }
 .skill-bar { height: 100%; background: var(--purple); border-radius: 2px; }
 
 .edu-cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.edu-block {}
+
 .edu-title {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700; font-size: 0.7rem;
@@ -234,7 +236,7 @@ nav {
   display: flex; align-items: flex-end; justify-content: space-between;
   padding: 4rem 3rem 2.5rem;
 }
-.forbes-header-left {}
+
 .forbes-label {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700; font-size: 0.7rem;
@@ -487,7 +489,7 @@ nav {
 .editorial-item {
   overflow: hidden; cursor: pointer;
   background: #ccc;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4961 / 3307;
   box-shadow: 0 4px 18px rgba(0,0,0,0.12);
 }
 .editorial-item img {
@@ -612,8 +614,8 @@ footer {
 }
 
 .lightbox-panel {
-  width: min(88vw, 660px);
-  height: 88vh;
+  width: 92vw;
+  height: 94vh;
   background: #0c0c0c;
   display: flex; flex-direction: column;
   position: relative;
@@ -631,7 +633,7 @@ footer {
   display: flex; justify-content: space-between; align-items: flex-start;
   flex-shrink: 0;
 }
-.lightbox-info {}
+
 .lightbox-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.5rem; letter-spacing: 0.06em;
