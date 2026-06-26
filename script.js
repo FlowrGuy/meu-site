@@ -11,6 +11,32 @@ function animCursor() {
 }
 animCursor();
 
+// Hero spotlight
+if (window.matchMedia('(hover: hover)').matches) {
+  const heroSection = document.getElementById('hero');
+  const spotlight = document.createElement('div');
+  spotlight.className = 'hero-spotlight';
+  heroSection.appendChild(spotlight);
+
+  let spTargetX = 0, spTargetY = 0, spX = 0, spY = 0;
+
+  heroSection.addEventListener('mousemove', e => {
+    const rect = heroSection.getBoundingClientRect();
+    spTargetX = e.clientX - rect.left;
+    spTargetY = e.clientY - rect.top;
+  });
+  heroSection.addEventListener('mouseenter', () => spotlight.classList.add('active'));
+  heroSection.addEventListener('mouseleave', () => spotlight.classList.remove('active'));
+
+  (function animSpotlight() {
+    spX += (spTargetX - spX) * 0.07;
+    spY += (spTargetY - spY) * 0.07;
+    spotlight.style.left = spX + 'px';
+    spotlight.style.top  = spY + 'px';
+    requestAnimationFrame(animSpotlight);
+  })();
+}
+
 // Nav show on scroll past hero
 const mainNav = document.getElementById('mainNav');
 const heroEl = document.getElementById('hero');
