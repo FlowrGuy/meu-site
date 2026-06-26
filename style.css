@@ -617,30 +617,34 @@ footer {
   /* lightbox — feed mode */
   .lightbox-panel { width: 95vw; height: 92vh; }
   .lightbox-viewport {
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
   }
   .lightbox-track {
-    flex-direction: column;
+    flex-direction: column !important;
     height: auto !important;
+    min-height: 0 !important;
     transform: none !important;
     transition: none !important;
-    gap: 2px;
+    gap: 3px;
+    align-items: stretch !important;
   }
   .lightbox-slide {
-    flex: 0 0 auto;
-    height: auto;
+    flex: 0 0 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
   }
   .lightbox-slide img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    object-fit: contain;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block;
   }
-  .lightbox-nav { display: none; }
-  .lightbox-dots { display: none; }
+  .lightbox-nav { display: none !important; }
+  .lightbox-dots { display: none !important; }
 }
 
 /* ─── RESPONSIVE · 480px ─── */

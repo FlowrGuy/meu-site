@@ -366,6 +366,7 @@ document.addEventListener('keydown', e => {
 let lbTouchY = 0;
 lbTrack.addEventListener('touchstart', e => { lbTouchY = e.touches[0].clientY; }, { passive: true });
 lbTrack.addEventListener('touchend', e => {
+  if (window.innerWidth <= 768) return;
   const diff = lbTouchY - e.changedTouches[0].clientY;
   if (Math.abs(diff) > 40) {
     if (diff > 0) { lbCur = lbCur >= lbTotal - 1 ? 0 : lbCur + 1; }
